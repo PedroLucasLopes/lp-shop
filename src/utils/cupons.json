@@ -1,0 +1,223 @@
+[
+  {
+    "store": "Centauro",
+    "description": "Desconto exclusivo de até 10% na Centauro",
+    "discount": "10% OFF",
+    "cupom": "DESCDEZ",
+    "logo": "logo_centauro.png",
+    "banner": "banner_centauro.jpg",
+    "link_cupom": "https://bm.b.br/hsm_desconto_centauro",
+    "link_partner": "https://centauro.parceriasonline.com.br/banco-mercantil"
+  },
+  {
+    "store": "Cestas Michelli",
+    "description": "Cestas Michelli com 15% de desconto exclusivo para você aproveitar e presentear. Válido somente online. Demais regras no site.",
+    "discount": "15% OFF",
+    "cupom": "PRO15OFF",
+    "logo": "logo_cestas.png",
+    "banner": "banner_cestas.jpg",
+    "link_cupom": "https://bm.b.br/hsm_desconto_cestasmichelli",
+    "link_partner": "https://cestasmichelli.parceriasonline.com.br/banco-mercantil"
+  },
+  {
+    "store": "Luckau",
+    "description": "Você vai conhecer a Luckau, uma loja criada para unir o seu desejo por chocolate ao ritmo leve de viver bem. Todos os nossos produtos são feitos pensando em te proporcionar uma experiência saudável e única. Aproveite 20% OFF em TODO o site usando o cupom CLUBE20. Regras da oferta: • Não cumulativo com outros cupons; • O desconto não se aplica ao frete; • O desconto não é válido para a categoria 'Food Service'; • Válido apenas para compras online.",
+    "discount": "20% OFF",
+    "logo": "logo_luckau.png",
+    "cupom": "CLUBE20",
+    "banner": "banner_luckau.png",
+    "link_cupom": "https://bm.b.br/hsm_desconto_luckau",
+    "link_partner": "https://www.luckau.com.br/"
+  },
+  {
+    "store": "Mash",
+    "description": "Descontos de até 15% com o cupom OFFMASH!",
+    "discount": "15% OFF",
+    "logo": "logo_mash.png",
+    "banner": "banner_mash.png",
+    "cupom": "OFFMASH",
+    "link_cupom": "https://bm.b.br/hsm_desconto_mash",
+    "link_partner": "https://www.mash.com.br/"
+  },
+  {
+    "store": "Mizuno",
+    "description": "Aproveite as promoções e oportunidades da Mizuno + 15% OFF exclusivo da parceria com o cupom",
+    "discount": "15% OFF",
+    "logo": "logo_mizuno.png",
+    "banner": "banner_mizuno.jpg",
+    "cupom": "MERCANTIL",
+    "link_cupom": "https://bm.b.br/hsm_desconto_mizuno",
+    "link_partner": "https://mizuno.parcerialink.com.br/mercantil"
+  },
+  {
+    "store": "Natura",
+    "description": "Ganhe 10% OFF na seleção de produtos do site da Natura",
+    "discount": "10% OFF",
+    "logo": "logo_natura.png",
+    "banner": "banner_natura.png",
+    "cupom": "MERCANTIL10",
+    "link_cupom": "https://bm.b.br/hsm_desconto_natura",
+    "link_partner": "https://www.natura.com.br/parceiros/mercantil"
+  },
+  {
+    "store": "NETSHOES",
+    "description": "Aproveite as promoções e oportunidades da Netshoes + 10% OFF exclusivo da parceria com o cupom",
+    "discount": "10% OFF",
+    "logo": "logo_netshoes.png",
+    "banner": "banner_netshoes.png",
+    "cupom": "MERCANTIL",
+    "link_cupom": "https://bm.b.br/hsm_desconto_netshoes",
+    "link_partner": "https://netshoes.parcerialink.com.br/mercantil"
+  },
+  {
+    "store": "Olympikus",
+    "description": "Aproveite as promoções e oportunidades da Olympikus + 15% OFF exclusivo da parceria com o cupom",
+    "discount": "15% OFF",
+    "logo": "logo_olympikus.png",
+    "banner": "banner_olympikus.jpg",
+    "cupom": "MERCANTIL",
+    "link_cupom": "https://bm.b.br/hsm_desconto_olympikus",
+    "link_partner": "https://olympikus.parcerialink.com.br/mercantil"
+  },
+  {
+    "store": "Petz",
+    "description": "10% de desconto exclusivo para clientes Mercantil",
+    "discount": "10% OFF",
+    "logo": "logo_petz.png",
+    "cupom": "DESCONTOPETZ10",
+    "banner": "banner_petz.jpg",
+    "link_cupom": "https://bm.b.br/hsm_desconto_petz",
+    "link_partner": "https://petz.parcerialink.com.br/banco-mercantil"
+  },
+  {
+    "store": "Puket",
+    "description": "10% de desconto exclusivo para clientes Mercantil",
+    "discount": "10% OFF",
+    "logo": "logo_puket.png",
+    "cupom": "AMO10PKT",
+    "banner": "banner_puket.png",
+    "link_cupom": "https://bm.b.br/hsm_desconto_puket",
+    "link_partner": "https://puket.parcerialink.com.br/banco-mercantil"
+  },
+  {
+    "store": "Riachuelo",
+    "description": "Cupom exclusivo para uso na loja online e APP Riachuelo",
+    "discount": "12% OFF",
+    "logo": "logo_riachuelo.png",
+    "banner": "banner_riachuelo.png",
+    "cupom": "PARCEIRO",
+    "link_cupom": "https://bm.b.br/hsm_desconto_riachuelo",
+    "link_partner": "https://click.linksynergy.com/deeplink?id=bs5T4ql/Pw8&mid=49354&murl=https%3A%2F%2Fwww.riachuelo.com.br%2F&u1=mercantil"
+  },
+  {
+    "store": "Salon Line",
+    "description": "20% de desconto exclusivo para clientes Mercantil",
+    "discount": "20% OFF",
+    "logo": "logo_salonline.png",
+    "banner": "banner_salonline.jpg",
+    "cupom": "SL20OFF",
+    "link_cupom": "https://bm.b.br/hsm_desconto_salonline",
+    "link_partner": "https://salonline.parcerialink.com.br/banco-mercantil"
+  },
+  {
+    "store": "Stanley",
+    "description": "Cliente Mercantil tem 10% OFF no site Stanley utilizando o cupom",
+    "discount": "10% OFF",
+    "logo": "logo_stanley.png",
+    "banner": "banner_stanley.png",
+    "cupom": "MERCANTIL",
+    "link_cupom": "https://bm.b.br/hsm_desconto_stanley",
+    "link_partner": "https://www.stanley1913.com.br/"
+  },
+  {
+    "store": "TOK&STOK",
+    "description": "Desconto exclusivo de 10% OFF no site da Tok&Stok",
+    "discount": "10% OFF",
+    "logo": "logo_tokstok.png",
+    "cupom": "PROXYMEDIA8",
+    "banner": "banner_tokstok.png",
+    "link_cupom": "https://bm.b.br/hsm_desconto_tokstok",
+    "link_partner": "https://tokstok.parcerialink.com.br/banco-mercantil"
+  },
+  {
+    "store": "Under Armour",
+    "description": "Aproveite as promoções e oportunidades da Under Armour + 15% OFF exclusivo da parceria com o cupom",
+    "discount": "15% OFF",
+    "logo": "logo_underarmour.png",
+    "banner": "banner_underarmour.png",
+    "cupom": "MERCANTIL",
+    "link_cupom": "https://bm.b.br/hsm_desconto_underarmour",
+    "link_partner": "https://underarmour.parcerialink.com.br/mercantil"
+  },
+  {
+    "store": "Vivara",
+    "description": "15% OFF na Life by Vivara com o cupom MERCANTIL15, ou 5% OFF na linha principal com o cupom MERCANTIL5",
+    "discount": "15% OFF",
+    "logo": "logo_vivara.png",
+    "banner": "banner_vivara.png",
+    "cupom": "MERCANTIL15 | MERCANTIL5",
+    "link_cupom": "https://bm.b.br/hsm_desconto_vivara",
+    "link_partner": "https://vivara.parcerialink.com.br/mercantil"
+  },
+  {
+    "store": "ZATTINI",
+    "description": "Aproveite as promoções e oportunidades da Zattini + 15% OFF exclusivo da parceria com o cupom",
+    "discount": "15% OFF",
+    "logo": "logo_zattini.png",
+    "banner": "banner_zattini.png",
+    "cupom": "MERCANTIL",
+    "link_cupom": "https://bm.b.br/hsm_desconto_zattini",
+    "link_partner": "https://zattini.parcerialink.com.br/mercantil"
+  },
+  {
+    "store": "Reserva",
+    "description": "Renove o seu guarda-roupa com 10% OFF usando o cupom",
+    "discount": "10% OFF",
+    "logo": "logo_reserva.png",
+    "banner": "banner_reserva.png",
+    "cupom": "MERCANTIL5V",
+    "link_cupom": "https://bm.b.br/hsm_desconto_reserva",
+    "link_partner": "https://www.usereserva.com/"
+  },
+  {
+    "store": "Shoestock",
+    "description": "Aproveite as promoções e oportunidades da Shoestock + 15% OFF exclusivo da parceria com o cupom",
+    "discount": "15% OFF",
+    "logo": "logo_shoestock.png",
+    "banner": "banner_shoestock.png",
+    "cupom": "MERCANTIL",
+    "link_cupom": "https://bm.b.br/hsm_desconto_shoestock",
+    "link_partner": "https://shoestock.parcerialink.com.br/mercantil"
+  },
+  {
+    "store": "LG",
+    "description": "Desconto exclusivo de até 18% OFF em produtos LG",
+    "discount": "20% OFF",
+    "logo": "logo_lg.png",
+    "banner": "banner_lg.png",
+    "cupom": "MERCANTIL-15 | MERCANTIL-20",
+    "link_cupom": "https://bm.b.br/hsm_desconto_lg",
+    "link_partner": "https://parceriasonline.com.br/banco-mercantil"
+  },
+  {
+    "store": "Evino",
+    "description": "Desconto exclusivo de R$20 em compras acima de R$150",
+    "discount": "R$20 OFF",
+    "logo": "logo_evino.png",
+    "banner": "banner_evino.jpg",
+    "cupom": "VEMPORCLUBE",
+    "link_cupom": "https://bm.b.br/hsm_desconto_evino",
+    "link_partner": "https://evino.parcerialink.com.br/banco-mercantil"
+  },
+  {
+    "store": "Samsung",
+    "description": "Descontos de até 18% OFF em produtos Samsung",
+    "discount": "18% OFF",
+    "logo": "logo_samsung.png",
+    "banner": "banner_samsung.png",
+    "cupom": "MERCANTIL",
+    "link_cupom": "https://bm.b.br/hsm_desconto_samsung",
+    "link_partner": "https://samsung.parcerialink.com.br/banco-mercantil"
+  }
+
+]

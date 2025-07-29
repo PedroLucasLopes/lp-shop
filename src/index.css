@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-padding {
+  padding: 15px;
+}
+
+.custom-margim {
+  margin-bottom: 15px;
+}
+
+.margin-top {
+  margin-top: 1.5rem;
+}
+
+.custom-title-cupom {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #090909;
+}
+
+.custom-title-cupom {
+  font-size: 1.2rem;
+}
+
+.custom-scratch-margin {
+  margin-top: 2rem;
+}
+
+.scratch-cupom {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.custom-padding {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 424px) {
+  .custom-title-cupom {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 530px) {
+  .custom-padding {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 531px) and (max-width: 767px) {
+  .custom-padding {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .custom-margim {
+    margin-top: 2rem;
+  }
+}
