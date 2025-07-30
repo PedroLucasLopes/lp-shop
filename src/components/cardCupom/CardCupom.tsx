@@ -38,7 +38,8 @@ const CardCupom: React.FC<CardProps> = ({ setReadyToSelect }) => {
         <div className="mt-6">
           <Button
             variant="subtle"
-            colorScheme="blue"
+            backgroundColor="blue"
+            color="white"
             marginBottom="10px"
             marginTop="10px"
             onClick={() => setReadyToSelect(false)}

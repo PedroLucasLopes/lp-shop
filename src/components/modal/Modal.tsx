@@ -113,7 +113,7 @@ const Modal: React.FC<ModalProps> = ({ cupom, setClaimed }) => {
 
             <Dialog.Footer>
               <Dialog.ActionTrigger asChild>
-                <Button variant="subtle" onClick={claimCupom}>
+                <Button variant="subtle" backgroundColor="black" color="white" onClick={claimCupom}>
                   {isScratched ? "Voltar" : "Escolher Outro Cupom"}
                 </Button>
               </Dialog.ActionTrigger>
