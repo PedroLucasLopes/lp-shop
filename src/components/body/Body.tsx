@@ -5,6 +5,7 @@ import Modal from "../modal/Modal";
 import Cookies from "js-cookie";
 import { useState } from "react";
 import ClaimedCupom from "../claimedCupom/ClaimedCupom";
+import CardCupom from "../cardCupom/CardCupom";
 
 interface BodyProps {
   cupons: {
@@ -30,6 +31,7 @@ interface SortParameterProps {
 
 const Body = ({ cupons }: BodyProps) => {
   const [claimed, setClaimed] = useState(false);
+  const [readyToSelect, setReadyToSelect] = useState(true);
   const [sort, setSort] = useState<SortProps>({
     alphabetical: "",
     discount: "",
@@ -55,27 +57,35 @@ const Body = ({ cupons }: BodyProps) => {
         <ClaimedCupom cupom={JSON.parse(Cookies.get("cupom") as string)} />
       ) : (
         <>
-          <Filter cupons={cupons.length} setSort={setSort} />
-          <div className="custom-padding grid grid-cols-2 md:grid-cols-5 xl:grid-cols-6">
-            {cupons.sort(compareCupons).map((cupom, i) => {
-              return (
-                <Dialog.Root
-                  placement="center"
-                  key={i}
-                  closeOnInteractOutside={false}
-                >
-                  <Dialog.Trigger asChild>
-                    <Cupom
-                      store={cupom.store}
-                      discount={cupom.discount}
-                      logo={cupom.logo}
-                    />
-                  </Dialog.Trigger>
-                  <Modal cupom={cupons[i]} setClaimed={setClaimed} />
-                </Dialog.Root>
-              );
-            })}
-          </div>
+          {readyToSelect && !isClaimed ? (
+            <div className="flex justify-center">
+              <CardCupom setReadyToSelect={setReadyToSelect} />
+            </div>
+          ) : (
+            <>
+              <Filter cupons={cupons.length} setSort={setSort} />
+              <div className="custom-padding grid grid-cols-2 md:grid-cols-5 xl:grid-cols-6 gap-1">
+                {cupons.sort(compareCupons).map((cupom, i) => {
+                  return (
+                    <Dialog.Root
+                      placement="center"
+                      key={i}
+                      closeOnInteractOutside={false}
+                    >
+                      <Dialog.Trigger asChild>
+                        <Cupom
+                          store={cupom.store}
+                          discount={cupom.discount}
+                          logo={cupom.logo}
+                        />
+                      </Dialog.Trigger>
+                      <Modal cupom={cupons[i]} setClaimed={setClaimed} />
+                    </Dialog.Root>
+                  );
+                })}
+              </div>
+            </>
+          )}
         </>
       )}
     </div>
