@@ -42,6 +42,11 @@
   font-weight: 600;
 }
 
+.custom-filter {
+  justify-content: space-between;
+  margin: 10px 0
+}
+
 @media screen and (max-width: 424px) {
   .custom-title-cupom {
     font-size: 1rem;
@@ -61,13 +66,25 @@
   .custom-padding {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-content: center;
+    margin-left: 0;
     gap: 1rem
   }
 }
 
-@media screen and (min-width: 531px) and (max-width: 767px) {
+@media screen and (min-width: 531px) and (max-width: 749px) {
+  .custom-padding {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
   .custom-padding {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem
   }
 }
 

@@ -9,7 +9,7 @@ interface FilterProps {
 const Filter = ({ cupons, setSort }: FilterProps) => {
   return (
     <div className="w-full">
-      <div className="flex justify-between items-center custom-padding">
+      <div className="flex justify-between items-center custom-filter">
         <p className="text-black custom-title-cupom">
           {cupons} lojas disponíveis
         </p>
