@@ -64,7 +64,7 @@ const Body = ({ cupons }: BodyProps) => {
           ) : (
             <>
               <Filter cupons={cupons.length} setSort={setSort} />
-              <div className="custom-padding grid grid-cols-2 md:grid-cols-5 xl:grid-cols-6 gap-1">
+              <div className="custom-padding grid grid-cols-2 md:grid-cols-5 xl:grid-cols-6">
                 {cupons.sort(compareCupons).map((cupom, i) => {
                   return (
                     <Dialog.Root
