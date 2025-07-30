@@ -27,6 +27,8 @@ const ClaimedCupom: React.FC<ClaimedCupomProps> = ({ cupom }) => {
         <Button
           variant="subtle"
           mt="1rem"
+          backgroundColor="rgba(0,0,0,0.9)"
+          color="white"
           onClick={() => window.open(cupom.link_partner)}
         >
           Ir para Loja
