@@ -98,6 +98,9 @@ const Modal: React.FC<ModalProps> = ({ cupom, setClaimed }) => {
                     <Button
                       variant="subtle"
                       mt="1rem"
+                      backgroundColor="#1526FF"
+                      color="white"
+                      boxShadow="0 2px 3px rgba(0,0,0,0.2)"
                       onClick={() => window.open(cupom.link_partner)}
                     >
                       Resgatar Cupom!
