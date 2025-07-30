@@ -124,9 +124,9 @@ const ScratchCard: React.FC<ScratchCardProps> = ({
         className="absolute top-0 left-0 flex items-center justify-center w-full h-full z-[1]"
         style={{ pointerEvents: "none" }}
       >
-        {scratchedPercent && <span className="text-[#1526FF] select-none scratch-cupom text-center">
+        {scratchedPercent ? <span className="text-[#1526FF] select-none scratch-cupom text-center">
           {discount}
-        </span>}
+        </span> : "🤩"}
       </div>
 
       <canvas
