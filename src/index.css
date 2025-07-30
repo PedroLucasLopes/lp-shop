@@ -42,10 +42,6 @@
   font-weight: 600;
 }
 
-.custom-padding {
-  padding: 1rem;
-}
-
 @media screen and (max-width: 424px) {
   .custom-title-cupom {
     font-size: 1rem;
@@ -64,7 +60,6 @@
 @media screen and (min-width: 427px) and (max-width: 530px) {
   .custom-padding {
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
     align-items: center;
     gap: 1rem
   }
