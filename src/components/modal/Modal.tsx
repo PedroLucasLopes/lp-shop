@@ -1,7 +1,6 @@
 import { useCallback, useState, type Dispatch } from "react";
 import { Button, CloseButton, Dialog, Portal } from "@chakra-ui/react";
 import ScratchCard from "../scratchcard/ScratchCard";
-import Cookies from "js-cookie";
 import { toaster } from "../ui/toaster";
 import Confetti from "react-confetti";
 
@@ -19,34 +18,34 @@ interface ModalProps {
   setClaimed: Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Modal: React.FC<ModalProps> = ({ cupom, setClaimed }) => {
+const Modal: React.FC<ModalProps> = ({ cupom }) => {
   const [scratchedPercent, setScratchedPercent] = useState<number>(0);
 
   const isScratched = scratchedPercent >= 1;
 
   const claimCupom = useCallback(() => {
     if (isScratched) {
-      Cookies.set("cupom", JSON.stringify(cupom), {
-        expires: 36500,
-        path: "/",
-      });
+      // Cookies.set("cupom", JSON.stringify(cupom), {
+      //   expires: 36500,
+      //   path: "/",
+      // });
       navigator.clipboard.writeText(cupom.cupom).then(() => {
         toaster.create({
           title: `Cupom copiado!`,
           type: "success",
         });
       });
-      setClaimed(true);
+      // setClaimed(true);
     }
 
     return;
-  }, [cupom, isScratched, setClaimed]);
+  }, [cupom, isScratched]);
 
-  if (isScratched)
-    Cookies.set("cupom", JSON.stringify(cupom), {
-      expires: 36500,
-      path: "/",
-    });
+  // if (isScratched)
+  //   Cookies.set("cupom", JSON.stringify(cupom), {
+  //     expires: 36500,
+  //     path: "/",
+  //   });
 
   return (
     <>
