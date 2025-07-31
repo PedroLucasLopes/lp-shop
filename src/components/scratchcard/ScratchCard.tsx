@@ -126,7 +126,7 @@ const ScratchCard: React.FC<ScratchCardProps> = ({
       >
         {scratchedPercent ? <span className="text-[#1526FF] select-none scratch-cupom text-center">
           {discount}
-        </span> : "🤩"}
+        </span> : <img src="assets/images/brands/logo_mercantil_blue.png" className="w-20 opacity-50" />}
       </div>
 
       <canvas

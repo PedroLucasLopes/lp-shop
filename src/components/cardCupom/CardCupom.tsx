@@ -1,11 +1,21 @@
-import { Box, Button, Text } from "@chakra-ui/react";
+import { Box, Button, Dialog, Text } from "@chakra-ui/react";
 import type { Dispatch, SetStateAction } from "react";
+import ModalRandom from "../modalRandom/ModalRandom";
 
 interface CardProps {
   setReadyToSelect: Dispatch<SetStateAction<boolean>>;
+  cupons: {
+    store: string;
+    description: string;
+    discount: string;
+    logo?: string;
+    cupom: string;
+    link_cupom: string;
+    link_partner: string;
+  }[]
 }
 
-const CardCupom: React.FC<CardProps> = ({ setReadyToSelect }) => {
+const CardCupom: React.FC<CardProps> = ({ setReadyToSelect, cupons }) => {
   return (
     <div className="flex flex-col md:flex-row bg-white overflow-hidden w-full max-w-4xl">
       <img
@@ -35,17 +45,36 @@ const CardCupom: React.FC<CardProps> = ({ setReadyToSelect }) => {
           </p>
         </div>
 
-        <div className="mt-6">
+        <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
           <Button
             variant="subtle"
             backgroundColor="blue"
             color="white"
-            marginBottom="10px"
             marginTop="10px"
+            w="100%"
+            maxW="15rem"
             onClick={() => setReadyToSelect(false)}
           >
-            Garantir meu Cupom
+            Garantir meu Cupom Selecionado
           </Button>
+          <Dialog.Root
+            placement="center"
+            size={window.innerWidth <= 425 ? "sm" : "md"}
+          >
+            <Dialog.Trigger asChild>
+              <Button
+                variant="subtle"
+                backgroundColor="blue"
+                w="100%"
+                maxW="15rem"
+                color="white"
+                marginTop="10px"
+              >
+                Garantir meu Cupom Aleatório
+              </Button>
+            </Dialog.Trigger>
+            <ModalRandom cupons={cupons} />
+          </Dialog.Root>
         </div>
       </Box>
     </div>

@@ -47,6 +47,13 @@
   margin: 10px 0
 }
 
+.custom-random-cupom {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #1526FF;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 424px) {
   .custom-title-cupom {
     font-size: 1rem;

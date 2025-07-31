@@ -59,7 +59,7 @@ const Body = ({ cupons }: BodyProps) => {
         <>
           {readyToSelect && !isClaimed ? (
             <div className="flex justify-center">
-              <CardCupom setReadyToSelect={setReadyToSelect} />
+              <CardCupom setReadyToSelect={setReadyToSelect} cupons={cupons} />
             </div>
           ) : (
             <>
