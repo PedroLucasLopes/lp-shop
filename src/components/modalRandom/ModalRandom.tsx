@@ -3,23 +3,23 @@ import { useCallback, useState } from "react";
 import Confetti from "react-confetti";
 
 interface Cupom {
-    store: string;
-    description: string;
-    discount: string;
-    logo?: string;
-    cupom: string;
-    link_cupom: string;
-    link_partner: string;
-    banner?: string
+  store: string;
+  description: string;
+  discount: string;
+  logo?: string;
+  cupom: string;
+  link_cupom: string;
+  link_partner: string;
+  banner?: string;
 }
 
-const ModalRandom = ({cupons}: {cupons: Cupom[]}) => {
-  const [revealCoupon, setRevealCoupon] = useState({} as Cupom)
+const ModalRandom = ({ cupons }: { cupons: Cupom[] }) => {
+  const [revealCoupon, setRevealCoupon] = useState({} as Cupom);
   const getRandomCupom = useCallback(() => {
-    const random:number = Math.floor(Math.random() * cupons.length)
-    setRevealCoupon(cupons[random])
-    return random
-  }, [cupons])
+    const random: number = Math.floor(Math.random() * cupons.length);
+    setRevealCoupon(cupons[random]);
+    return random;
+  }, [cupons]);
   return (
     <>
       <Portal>
@@ -38,37 +38,64 @@ const ModalRandom = ({cupons}: {cupons: Cupom[]}) => {
           >
             <div className="flex justify-center items-center w-full absolute top-0 left-0 border-t-[0.375]">
               <img
-                src={`assets/images/banner/${revealCoupon.cupom ? revealCoupon.banner :
-                  "shop_yellow_blue.png"
+                src={`assets/images/banner/${
+                  revealCoupon.cupom
+                    ? revealCoupon.banner
+                    : "shop_yellow_blue.png"
                 }`}
                 alt="banner"
                 style={{
                   objectFit: revealCoupon.cupom ? "cover" : "contain",
                   width: "100%",
-                  height: "10rem"
+                  height: "10rem",
                 }}
               />
             </div>
             <Dialog.Body color="black" mt="2rem" p="4">
-              <Dialog.Title mb=".5rem">{revealCoupon.description && "Benefícios"}</Dialog.Title>
+              <Dialog.Title mb=".5rem">
+                {revealCoupon.description && "Benefícios"}
+              </Dialog.Title>
               <p>{revealCoupon.description && revealCoupon.description}</p>
               <div className="flex flex-col justify-center items-center custom-scratch-margin">
-                <p className="custom-title-cupom custom-margim">{revealCoupon.cupom ? revealCoupon.store : "Descubra seu cupom!"}</p>
+                <p className="custom-title-cupom custom-margim">
+                  {revealCoupon.cupom
+                    ? revealCoupon.store
+                    : "Descubra seu cupom!"}
+                </p>
                 <p className="custom-random-cupom">{revealCoupon.cupom}</p>
-                    <Button
-                      variant="subtle"
-                      mt="1rem"
-                      backgroundColor="#1526FF"
-                      color="white"
-                      boxShadow="0 2px 3px rgba(0,0,0,0.2)"
-                      onClick={() => {getRandomCupom()}}
-                    >
-                      {revealCoupon.cupom ? "Resgatar Cupom!" : "Sortear Cupom"}
-                    </Button>
-                    {revealCoupon.cupom && <Confetti
-                      width={window.innerWidth}
-                      height={window.innerHeight}
-                    />}
+                {revealCoupon.cupom ? (
+                  <Button
+                    variant="subtle"
+                    mt="1rem"
+                    backgroundColor="#1526FF"
+                    color="white"
+                    boxShadow="0 2px 3px rgba(0,0,0,0.2)"
+                    onClick={() => {
+                      window.open(revealCoupon.link_partner);
+                    }}
+                  >
+                    Resgatar Cupom
+                  </Button>
+                ) : (
+                  <Button
+                    variant="subtle"
+                    mt="1rem"
+                    backgroundColor="#1526FF"
+                    color="white"
+                    boxShadow="0 2px 3px rgba(0,0,0,0.2)"
+                    onClick={() => {
+                      getRandomCupom();
+                    }}
+                  >
+                    Sortear Cupom
+                  </Button>
+                )}
+                {revealCoupon.cupom && (
+                  <Confetti
+                    width={window.innerWidth}
+                    height={window.innerHeight}
+                  />
+                )}
               </div>
             </Dialog.Body>
 
